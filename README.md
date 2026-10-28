@@ -31,9 +31,6 @@ mdbook serve --open
   - `06_尾声_留给下一个FAE的话/` —— 尾声
 - `book.toml` —— mdBook 站点配置
 - `.github/workflows/deploy.yml` —— 推送 `main` 后自动构建并发布
-- `大纲.md` —— 全书大纲
-- `待补清单.md` —— 各章待补事项与待核对内容
-- `_我的输入.md` —— 素材输入入口
 
 ## 写作约定
 
