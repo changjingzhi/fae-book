@@ -2,6 +2,22 @@
 
 一本关于"怎么做 FAE"的书稿项目：Why（为什么需要 FAE）/ Who（FAE 是一群什么样的人）/ What（FAE 怎么做事）。
 
+## 在线阅读
+
+用 [mdBook](https://rust-lang.github.io/mdBook/) 构建，推送 `main` 分支后由 GitHub Actions 自动发布：
+
+**https://changjingzhi.github.io/fae-book/**
+
+- 目录配置：`书稿/SUMMARY.md`（新增章节需在此登记）
+- 站点配置：`book.toml`
+- 自动部署：`.github/workflows/deploy.yml`
+
+本地预览（需先安装 mdBook：`cargo install mdbook`）：
+
+```bash
+mdbook serve --open
+```
+
 ## 目录结构
 
 - `大纲.md` —— 全书大纲与素材挂靠

@@ -1,0 +1,31 @@
+[book]
+title = "怎么做 FAE"
+authors = ["changjingzhi"]
+description = "一本关于「怎么做 FAE」的书：Why / Who / What"
+language = "zh-CN"
+src = "书稿"
+
+[build]
+build-dir = "book"
+# SUMMARY.md 里写了但文件不存在时直接报错，而不是静默生成空白页
+create-missing = false
+
+[output.html]
+# GitHub Pages 项目站点路径，必须配置，否则搜索与静态资源会 404
+site-url = "/fae-book/"
+git-repository-url = "https://github.com/changjingzhi/fae-book"
+edit-url-template = "https://github.com/changjingzhi/fae-book/edit/main/书稿/{path}"
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = false
+
+[output.html.search]
+enable = true
+limit-results = 50
+teaser-word-count = 40
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
